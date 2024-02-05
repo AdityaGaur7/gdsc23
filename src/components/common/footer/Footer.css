@@ -48,8 +48,14 @@ footer .wrapper div {
     width: 100%;
 }
 
-.footerLinks {}
-
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
 footer p {
     color: var(--lightText);
     font-size: 16px;
