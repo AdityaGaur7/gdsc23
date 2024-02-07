@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hanging-words-container {
+    position: absolute;
+    top: -170px;
+    left: 42%;
+    transform: translateX(-50%);
+    animation: hangingWords 3s ease-out forwards;
+  }
+
+  .hanging-word {
+    display: inline-block;
+    margin-right: -40px;
+    opacity: 0;
+    transform-origin: top;
+    animation: swing 1s ease-out forwards;
+  }
+
+  @keyframes hangingWords {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotateZ(-20deg);
+    }
+    50% {
+      transform: rotateZ(20deg);
+    }
+    100% {
+      transform: rotateZ(0);
+      opacity: 1;
+    }
+  }
+
+h1{
+    --tw-text-opacity: 1;
+    color: rgb(145 150 159/var(--tw-text-opacity));
+    font-weight: 700;
+    line-height: 1;
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 95px;
+    margin-top: 135px;
+}
+
+.flex{
+    
+    list-style: none;
+
+}
+
+.decor{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    text-decoration:inherit ;
+    
+}
+span{
+    margin-left: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(145 150 159/var(--tw-text-opacity));
+    font-weight: 700;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+img{
+    margin-top: 12px;
+    margin-left: 50px;
+}
+
+#insta:hover{
+    color: rgb(207, 5, 5);
+}
+#link:hover{
+    color:green;
+}
+#tele:hover{
+    color: blue;
+}
+#twit:hover{
+    color:rgb(236, 212, 27);
+}
