@@ -4,10 +4,10 @@ export default function Contact() {
         <>
         
         <div className="hanging-words-container">
-    <span className="hanging-word"><img src="img/g.svg" alt=""/></span>
-    <span className="hanging-word"><img src="img/d.svg" alt=""/> </span>
-    <span className="hanging-word"><img src="img/s.svg" alt=""/></span>
-    <span className="hanging-word"><img src="img/c.svg" alt=""/> </span>
+    <span className="hanging-word"><img src="image1/img/g.svg" alt=""/></span>
+    <span className="hanging-word"><img src="image1/img/d.svg" alt=""/> </span>
+    <span className="hanging-word"><img src="image1/img/s.svg" alt=""/></span>
+    <span className="hanging-word"><img src="image1/img/c.svg" alt=""/> </span>
   </div>
   <div>
     <h1>Find us on</h1>
