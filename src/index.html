@@ -1,0 +1,338 @@
+<!-- This is team page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gdsc team page</title>
+    <style>
+        body {
+          font-family: Open Sans,sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+        }
+
+        .big{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            width:100%;
+
+        }
+        h1{
+            font-size: 6.5vw;
+            color:#666;
+            font-weight: 100;
+           
+        }
+
+        .card {
+            width: 60vh;
+            height: 50vh;
+            max-width:300px;
+            max-height:600px;
+            overflow: hidden;
+            /* transition: transform 0.3s ease-in-out; */
+            margin: 20px;
+            animation: moveUpDown 1s ease-in-out;
+            animation-iteration-count: 7;
+        }
+
+        img {
+            position:absolute;
+            width: 40vh;
+            height: 30vh;
+            z-index: 1; 
+           
+        }
+
+        .second-image {
+            position: absolute;
+            width: 33vh; 
+            height: 30vh;
+            z-index: 2; 
+           
+        }
+
+        .card-details {
+            padding: 15px;
+            text-align: center;
+            position: absolute;
+            margin-top:30vh;
+            margin-left:11vh;
+            z-index:3;
+           
+        }
+
+        .card-details h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card-details p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #666;
+        }
+
+
+        @keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            width:100%;
+            height:100vh;
+            margin-top: 20px;
+            display:block; 
+            
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #4c8bf5;
+            font-size: 7vw;
+            margin:13px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 20px;
+            margin:30px;
+            font-weight: 100;
+        }
+        button {
+            background-color: #b7bcb7;
+            color: #111111;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size:19px;
+           
+            width:13vw;
+            height:5vh
+        }
+        .tri {
+          display:block;
+          top:5px;
+          margin:20px;
+          
+        }
+        #triangle{
+          position:absolute;
+          right:16px;
+          /* height:7vh; */
+          width:4.5vw;
+          
+        }
+        .cir-place{
+          display:block;
+        }
+        #circle{
+          position:absolute;
+          top:15px;
+          left:16px;
+          height:7vh;
+          width:3vw;
+
+        }
+        .rec-place{
+          display:block;
+        }
+        #rectangle{
+          position:absolute;
+          left:16px;
+          height:7vh;
+          width:7.5vw;
+
+        }
+
+        .gif-place{
+          display:block;
+          
+           
+
+        }
+        .gif {
+            position: absolute;
+            width:55vw;
+            height:auto;
+            background-blend-mode: screen;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="big"> <h1>Meet the team.....</h1>
+    </div>
+   
+    <script>
+        
+        const imageDataArray = [
+        {
+      
+      "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+      name: "Jyoti",
+      post: "web dev",
+    },
+    {
+       
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "muskii",
+      post: "android"
+    },
+     {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "shruti",
+      post: "pycharm",
+    
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "anu",
+        post: "cloud",
+    },
+    {
+      "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+      name: "Jyoti",
+      post: "web dev",
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "muskii",
+      post: "android"
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "shruti",
+      post: "pycharm",
+    
+    },
+    {
+      "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+      name: "Jyoti",
+      post: "web dev",
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "muskii",
+      post: "android"
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "anu",
+        post: "cloud",
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "anu",
+        post: "cloud",
+    },
+    {
+      "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+      name: "Jyoti",
+      post: "web dev",
+    },
+    {
+        "url2":'Anusha Tiwari.ecf15cb3efd92866e96d.png',
+        name: "muskii",
+      post: "android"
+    }
+        ];
+        const cardImages = [
+        "bg1.85a5be3479296f462141.svg","bg0.ac0cd566fe0f123896b3.svg","bg4.adfb636d8e573d5cc5fa.svg","bg4.adfb636d8e573d5cc5fa.svg",
+        "bg1.85a5be3479296f462141.svg","bg2.87d46888448e11653a07.svg"
+   
+    // Add more image URLs as needed
+  ];
+
+
+
+        function createCard(imageData) {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const image = document.createElement('img');
+
+            const randomImageIndex = Math.floor(Math.random() * cardImages.length);
+  const randomImageUrl = cardImages[randomImageIndex];
+  image.src = randomImageUrl;
+
+
+
+
+            const image2 = document.createElement('img');
+            image2.src = imageData.url2;
+            image2.className = 'second-image';
+
+            const cardDetails = document.createElement('div');
+            cardDetails.className = 'card-details';
+
+            const title = document.createElement('h2');
+            title.textContent = imageData.name;
+
+            const description = document.createElement('p');
+            description.textContent = imageData.post;
+
+            cardDetails.appendChild(title);
+            cardDetails.appendChild(description);
+
+            card.appendChild(image);
+            card.appendChild(image2);
+            card.appendChild(cardDetails);
+
+            return card;
+        }
+        const container = document.body;
+        imageDataArray.forEach(imageData => {
+            const card = createCard(imageData);
+            container.appendChild(card);
+        });
+    </script>
+
+<div class="container">
+  <div class="tri">
+    <img src="tri.svg" id="triangle" alt="">
+  </div>
+  <div class="cir-place">
+    <img src="cir.svg" id="circle" alt="">
+  </div>
+  <div class="content">
+      <h2>Stay Updated</h2>
+      <p>Stay connected to stay updated about the upcoming <br> events and the latest news.</p>
+      <button>Join Us</button>
+      
+  </div>
+  <div class="rec-place">
+    <img src="rect.svg" id="rectangle" alt="">
+  </div>
+  <div class="gif-place">
+    <img src="123-unscreen.gif" alt="GIF" class="gif">
+  </div>
+
+  
+</div>
+
+</body>
+</html>
