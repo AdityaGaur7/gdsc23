@@ -9,7 +9,7 @@ import { Footer, Navbar } from "../common";import {
 } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import Team from "./Team/Team";
-import Contact from "./Contact/Contact";
+import Contact from "../contact/Contact";
 import Event from "./Event/Event";
 import Notfound from "./Error/Error";
 export const Home = () => {
