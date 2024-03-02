@@ -1,5 +1,7 @@
 import React from "react";
 import Hero from "./Hero/Hero";
+import Loader from "./Loader/Loader"
+import { useEffect, useState } from 'react';
 import { Footer, Navbar } from "../common";import {
   BrowserRouter as Router,
   Routes,
@@ -11,8 +13,22 @@ import Contact from "./Contact/Contact";
 import Event from "./Event/Event";
 import Notfound from "./Error/Error";
 export const Home = () => {
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+   
+    const timeout = setTimeout(() => {
+      setShowLoader(false);
+    }, 5000);
+
+    return () => clearTimeout(timeout); 
+  }, []); 
+
   return (
     <Router>
+     {showLoader && <Loader />}
+  
+     <div>
     <div>
       <AnimatedCursor
         trailingSpeed={2}
@@ -89,6 +105,8 @@ export const Home = () => {
 
       <Footer />
     </div>
+
+     </div>
     </Router>
   );
 };
